@@ -1,4 +1,4 @@
- //値の取得処理
+  //値の取得処理
 let study;if(localStorage.getItem('study') == null) {study=0;}else{study =Number(localStorage.getItem('study'));document.getElementById('study').textContent = study;}
 let play;if(localStorage.getItem('play') == null) {play=0;}else{play =Number(localStorage.getItem('play'));document.getElementById('play').textContent = play;}
 let moving;if(localStorage.getItem('moving') == null) {moving=0;}else{moving =Number(localStorage.getItem('moving'));document.getElementById('moving').textContent = moving;}
@@ -65,7 +65,7 @@ else if(study<-10 && play<-10 && moving>=-10){document.getElementById('badstatus
 else if(study<-10 && moving<-10 && play>=-10){document.getElementById('badstatus').textContent = 'にーと';document.getElementById("subpic").src="niito.png"}
 else if(play<-10 && moving<-10 && study>=-10){document.getElementById('badstatus').textContent = 'せーかつしゅーかんびょー'}
 else if(play<-10 && moving<-10 && study<-10){document.getElementById('badstatus').textContent = 'むてきマン'}
-else{document.getElementById('badstatus').textContent = ':)'}
+else{document.getElementById('badstatus').textContent = ':)';document.getElementById("subpic").src=""}
 }
 
 function dataclear(){
